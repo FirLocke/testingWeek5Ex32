@@ -12,7 +12,7 @@
 
     <header>
 
-        <img src="images/dog.jpg" alt="Logo">
+
 
     </header>
 
@@ -27,9 +27,94 @@
 
 <main>
 
-<h1> Find this dog a HOME.</h1>
+  <p>What do you think of this?</p>
+  <textarea name="comments" cols="40" rows="6">Enter your comment</textarea><br><br>
 
 
+
+  <label for="name">Name (4 to 8 characters):</label>
+
+  <input type="text" id="name" name="name" required
+         minlength="2" maxlength="8" size="20"> <br> <br>
+
+         <div>
+             <label for="username">Username (8 characters minimum):
+
+             </label>
+             <input type="text" id="username" name="username"
+                    minlength="8" required readonly>
+
+         </div>
+
+<div>
+    <label for="pass">Password (8 characters minimum):
+
+    </label>
+    <input type="password" id="pass" name="password"
+           minlength="8" required>
+
+</div>
+
+
+
+<p>Choose today's weather:</p>
+<p class="textChange">You can choose more than one, this is Ireland after all!</p>
+
+<div>
+  <input type="checkbox" id="sun" name="sun">
+  <label for="sun">Sun</label>
+</div>
+
+<div>
+  <input type="checkbox" id="snow" name="storm">
+  <label for="snow">Snow</label>
+</div>
+
+<div>
+  <input type="checkbox" id="storm" name="storm">
+  <label for="storm">Storm</label>
+</div>
+
+<div>
+  <input type="checkbox" id="rain" name="rain">
+  <label for="rain">Rain</label>
+</div>
+
+
+<p>Please select your favourite genre:<br><br>
+
+  <input type="radio" name="genre" value="rock">Rock<br>
+  <input type="radio" name="genre" value="pop">Pop<br>
+  <input type="radio" name="genre" value="blues">Blues
+</p>
+
+<p>What languages do you know?</p>
+<p class="textChange">You can choose more than one by holding Ctrl as you click!</p>
+
+<select name="languages" size="5" multiple="multiple">
+  <option value="English">English</option>
+  <option value="German">German</option>
+  <option value="French">French</option>
+  <option value="Irish">Irish</option>
+  <option value="Swedish">Swedish</option>
+</select>
+
+
+<p>What country would you like to go to?</p>
+
+<select name="countries">
+  <option selected disabled hidden style="display: none" value=""> -- select an option --</option>
+  <option value="England">England</option>
+  <option value="Germany">Germany</option>
+  <option value="France">France</option>
+  <option value="Ireland">Ireland</option>
+  <option value="Sweden">Sweden</option>
+</select>
+
+
+<p>Upload an image of your choosing:</p>
+<input type="file" name="user-image"><br><br>
+<input type="submit" value="Submit">
 
 
 
